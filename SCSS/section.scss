@@ -1,0 +1,158 @@
+main{ 
+    grid-area: main;
+    margin: 1px;
+    padding: 1px;}
+
+.image {
+        width: 190px;
+        position: rigth;
+}
+
+.text {
+    @extend .text2;
+    color: black; 
+    font-style: italic;
+}
+.text {
+    font-size: $size-320-prim;
+    
+}
+
+.text2{
+
+    font-size:$size-320-sec;
+}
+
+.foot{
+    display: flex;
+
+}
+.foot-1{
+    align-items: baseline;
+}
+.maps {
+    width: 150px;    
+    height: 100px;
+}
+
+.redes { 
+    width: 20px;
+    height: 20px;
+}
+footer{
+    padding: 0px;
+    border: inset;
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: $size-320-sec;
+    color: $color-primary;
+    background-image: url(../Imagenes/floor-tile.png);
+    grid-area: footer;
+}
+
+@for $x from 1 through 6 {
+    h#{$x} {
+        font-size: 40px / $x;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+.carousel-slide img{
+    height: 200px;
+
+}
+.carousel-item img {
+    height: 150px;
+}
+.carousel-caption p{
+    font-size: $size-768-sec;
+    color:$color-primary;
+
+}
+.carousel-caption h5{
+    color: $color-primary;
+}
+
+
+.image {
+        width: 200px;
+        position: left;
+}
+
+.text {
+    color: black; 
+    font-style: italic;
+    font-size: $size-768-prim;
+}
+
+.text2{
+    color: black; 
+    font-style: italic;
+    font: size $size-768-sec;
+}
+
+.maps {
+    width: 250px;    
+    height: 200px;
+}
+
+.redes { 
+    width: 30px;
+    height: 30px;
+}
+@for $x from 1 through 6 {
+    h#{$x} {
+        font-size: 50px / $x;
+    }
+}
+}
+
+@media screen and (min-width:1024px) {
+
+.carousel-slide img{
+    height: 450px;
+
+}
+.carousel-item img {
+    height: 450px;
+}
+
+.carousel-caption p{
+    font-size: $size-1024-sec;
+
+}
+
+.image {
+    width: 300px;
+    position: left;
+}
+
+.text {
+color: black; 
+font-style: italic;
+font-size: $size-1024-prim;
+}
+
+.text2{
+color: black; 
+font-style: italic;
+font: size $size-1024-sec;
+}
+
+.maps {
+width: 400px;    
+height: 300px;
+}
+
+.redes { 
+width: 40px;
+height: 40px;
+}
+@for $x from 1 through 6 {
+    h#{$x} {
+        font-size: 70px / $x;
+    }
+}
+}

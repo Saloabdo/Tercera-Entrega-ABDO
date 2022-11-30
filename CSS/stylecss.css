@@ -1,0 +1,126 @@
+* {
+  margin: 1px;
+  padding: 1px; }
+
+.prod {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.card {
+  background-color: beige;
+  width: 126px;
+  height: auto;
+  justify-content: space-between; }
+
+.card-img-top {
+  width: 115px;
+  height: 115px;
+  align-items: center;
+  margin: none;
+  padding: none; }
+
+.card-img-top {
+  height: 115px;
+  width: 115px;
+  align-items: center; }
+
+.prod-ceramico {
+  background-color: beige;
+  width: 126px;
+  height: auto;
+  justify-content: space-between; }
+
+.prod-griferia {
+  background-color: beige;
+  width: 126px;
+  height: auto;
+  justify-content: space-between; }
+
+.prod-alacenasybajomesadas {
+  background-color: beige;
+  width: 126px;
+  height: auto;
+  justify-content: space-between; }
+
+.card-body h5 {
+  font-size: 18px; }
+
+.card-body p {
+  font-size: 14px; }
+
+.btn {
+  font-size: 14px; }
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 210px;
+    height: auto; }
+  .card-img-top {
+    height: 200px;
+    width: 200px;
+    align-items: center; }
+  .prod-ceramico {
+    background-color: beige;
+    width: 210px;
+    height: auto;
+    justify-content: space-between; }
+  .prod-griferia {
+    background-color: beige;
+    width: 210px;
+    height: auto;
+    justify-content: space-between; }
+  .prod-alacenasybajomesadas {
+    background-color: beige;
+    width: 210px;
+    height: auto;
+    justify-content: space-between; }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: none;
+    padding: none; }
+  .card-body h5 {
+    font-size: 25px; }
+  .card-body p {
+    font-size: 21px; }
+  .btn {
+    font-size: 21px; } }
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 300px;
+    height: auto; }
+  .card-img-top {
+    height: 290px;
+    width: 290px;
+    align-items: center; }
+  .prod-ceramico {
+    background-color: beige;
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+    padding: 5px 5px; }
+  .prod-griferia {
+    background-color: beige;
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+    padding: 5px 5px; }
+  .prod-alacenasybajomesadas {
+    background-color: beige;
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+    padding: 5px 5px; }
+  .card-img-top {
+    width: 290px;
+    height: 290px;
+    margin: none;
+    padding: none; }
+  .card-body h5 {
+    font-size: 30px; }
+  .card-body p {
+    font-size: 26px; }
+  .btn {
+    font-size: 26px; } }
