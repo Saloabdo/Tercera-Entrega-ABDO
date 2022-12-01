@@ -1,0 +1,139 @@
+body { 
+    background-image: url(../Imagenes/floor-tile.png);
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: rgba(92, 8, 8, 0.753);
+    width: 95vw;
+
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main"
+    "footer";
+    grid-gap: 1px;
+
+}
+header{
+    grid-area: header;
+}
+.header{
+
+    color: rgba(92, 8, 8, 0.753);
+    font-style: italic;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    padding: 10px 0px;
+    align-items: initial;
+    
+}
+.header-slogan{
+    align-items: initial;
+    color: rgba(92, 8, 8, 0.753);
+    font-size: $size-320-prim;
+    padding: 10px 0px;
+}
+
+.navbar{
+    
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(92, 8, 8, 0.753);
+    background-color: white;
+    text-align: start;
+    font-size: $size-320-prim;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background-color: $color-primary;
+}
+
+
+
+@media screen and (min-width:768px) {
+    body {  
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-gap: 10px;
+    margin: 10px 10px;
+    padding: 1px 1px;
+    }
+    
+    
+    .header{    
+        padding: 5px;
+        margin: 5px;
+     
+    }
+    
+    .header-logo {
+        width: 100px;
+        height: auto;
+        align-items: initial;
+        
+    }
+    .header-slogan{
+     
+        font-size: 15px;
+    }
+    .navbar{
+        font-size: 20px;
+        padding: 0px 5px;
+        transition: all .3seg ease-in-out;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    
+    body {  
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-gap: 10px;
+    margin: 25px 25px;
+    padding: 2px 2px;
+    }
+    .header{    
+        padding: 10px;
+        margin: 10px;
+     
+    }
+    
+    .header-logo {
+        width: 200px;
+        height: auto;
+        align-items: initial;
+        
+    }
+    .header-slogan{
+     
+        font-size: 20px;
+    }
+    .navbar{
+        font-size: 20px;
+        padding: 0px 5px;
+        transition: all .3seg ease-in-out;
+    }
+      
+        
+
+}
